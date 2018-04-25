@@ -4,12 +4,12 @@ struct rtcdate;
 // system calls
 int fork(void);
 int exit(void) __attribute__((noreturn));
+int wait(void);
 
 //new exit
 int nexit(int status) __attribute__((noreturn));
 //end new exit
 
-int wait(void);
 //new wait
 int nwait(int*);
 

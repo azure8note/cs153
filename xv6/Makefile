@@ -165,7 +165,7 @@ UPROGS=\
 	_grep\
 	_init\
 	_kill\
-	_lab1_test\
+  _lab1_test\
 	_ln\
 	_ls\
 	_mkdir\
@@ -174,8 +174,7 @@ UPROGS=\
 	_stressfs\
 	_wc\
 	_zombie\
-
-# _usertests // removed for the build	
+#	_usertests\
 
 fs.img: mkfs README $(UPROGS)
 	./mkfs fs.img README $(UPROGS)
@@ -248,8 +247,8 @@ EXTRA=\
 	printf.c umalloc.c\
 	README dot-bochsrc *.pl toc.* runoff runoff1 runoff.list\
 	.gdbinit.tmpl gdbutil\
-
-# stressfs.c -> usertests.c -> wc.c
+ 
+#usertests.c
 
 dist:
 	rm -rf dist

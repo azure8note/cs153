@@ -87,7 +87,7 @@ main(int argc, char *argv[])
     wc(fd, argv[i]);
     close(fd);
   }
-  exit(); 
+  exit();
   59:	e8 54 03 00 00       	call   3b2 <exit>
     exit();
   }

@@ -58,11 +58,11 @@ main(int argc, char *argv[])
   31:	83 c3 04             	add    $0x4,%ebx
   34:	39 fe                	cmp    %edi,%esi
   36:	75 e8                	jne    20 <main+0x20>
-    if(unlink(argv[i]) < 0){
       printf(2, "rm: %s failed to delete\n", argv[i]);
       break;
     }
   }
+
   exit();
   38:	e8 65 02 00 00       	call   2a2 <exit>
     exit();

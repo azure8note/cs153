@@ -96,7 +96,7 @@ main(void)
       98:	e8 13 01 00 00       	call   1b0 <runcmd>
     wait();
   }
-  exit(); 
+  exit();
       9d:	e8 40 0d 00 00       	call   de2 <exit>
 
   // Read and run input commands.
@@ -200,7 +200,7 @@ getcmd(char *buf, int nbuf)
      159:	8d bc 27 00 00 00 00 	lea    0x0(%edi,%eiz,1),%edi
 
 00000160 <panic>:
-  exit(); 
+  exit();
 }
 
 void
@@ -273,6 +273,7 @@ runcmd(struct cmd *cmd)
      1ba:	85 db                	test   %ebx,%ebx
      1bc:	74 5f                	je     21d <runcmd+0x6d>
     exit();
+
   switch(cmd->type){
      1be:	83 3b 05             	cmpl   $0x5,(%ebx)
      1c1:	0f 87 e7 00 00 00    	ja     2ae <runcmd+0xfe>
@@ -326,7 +327,7 @@ runcmd(struct cmd *cmd)
     close(rcmd->fd);
     if(open(rcmd->file, rcmd->mode) < 0){
       printf(2, "open %s failed\n", rcmd->file);
-      exit(); 
+      exit();
      220:	e8 bd 0b 00 00       	call   de2 <exit>
     wait();
     break;
@@ -406,9 +407,9 @@ runcmd(struct cmd *cmd)
      2a3:	8b 43 04             	mov    0x4(%ebx),%eax
      2a6:	89 04 24             	mov    %eax,(%esp)
      2a9:	e8 02 ff ff ff       	call   1b0 <runcmd>
-
   if(cmd == 0)
     exit();
+
   switch(cmd->type){
   default:
     panic("runcmd");

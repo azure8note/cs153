@@ -21,7 +21,7 @@ int main(int argc, char *argv[]) {
   
     // End of test */
     printf(1, "Simple code\n");
-
+/*
     int pid, ret_pid, exit_status;
 
     pid = fork();
@@ -34,7 +34,7 @@ int main(int argc, char *argv[]) {
         ret_pid = nwait(&exit_status);
         printf(1, " - This is the parent: child with PID# %d has exited with status %d\n", ret_pid, exit_status);
     }
-    
+    */
     return 0;
 }
   

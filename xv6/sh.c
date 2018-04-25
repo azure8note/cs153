@@ -66,6 +66,7 @@ runcmd(struct cmd *cmd)
 
   if(cmd == 0)
     exit();
+
   switch(cmd->type){
   default:
     panic("runcmd");
@@ -83,7 +84,7 @@ runcmd(struct cmd *cmd)
     close(rcmd->fd);
     if(open(rcmd->file, rcmd->mode) < 0){
       printf(2, "open %s failed\n", rcmd->file);
-      exit(); 
+      exit();
     }
     runcmd(rcmd->cmd);
     break;
@@ -167,7 +168,7 @@ main(void)
       runcmd(parsecmd(buf));
     wait();
   }
-  exit(); 
+  exit();
 }
 
 void

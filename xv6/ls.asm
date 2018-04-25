@@ -61,7 +61,7 @@ main(int argc, char *argv[])
   2e:	39 f3                	cmp    %esi,%ebx
   30:	75 ee                	jne    20 <main+0x20>
     ls(argv[i]);
-  exit();  
+  exit();
   32:	e8 6b 05 00 00       	call   5a2 <exit>
 main(int argc, char *argv[])
 {

@@ -106,8 +106,8 @@ int             pipewrite(struct pipe*, char*, int);
 int             cpuid(void);
 void            exit(void);
 
-//new exit 
-void			nexit(int status);
+// new exit
+void 		        nexit(int status);
 //end new exit
 
 int             fork(void);
@@ -125,7 +125,7 @@ void            userinit(void);
 int             wait(void);
 
 //new wait
-int 			nwait(int *status);
+int 	  	      nwait(int *status);
 //end new wait
 
 void            wakeup(void*);

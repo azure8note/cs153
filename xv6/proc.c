@@ -320,7 +320,6 @@ nexit(int status)
 }
 //END NEW EXIT
 
-
 // Wait for a child process to exit and return its pid.
 // Return -1 if this process has no children.
 int

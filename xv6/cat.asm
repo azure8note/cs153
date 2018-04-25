@@ -165,7 +165,7 @@ cat(int fd)
   if(n < 0){
   db:	75 20                	jne    fd <cat+0x6d>
     printf(1, "cat: read error\n");
-    exit();  
+    exit();
   }
 }
   dd:	83 c4 10             	add    $0x10,%esp
@@ -193,7 +193,7 @@ cat(int fd)
  104:	00 
  105:	c7 04 24 01 00 00 00 	movl   $0x1,(%esp)
  10c:	e8 8f 03 00 00       	call   4a0 <printf>
-    exit();  
+    exit();
  111:	e8 2c 02 00 00       	call   342 <exit>
  116:	66 90                	xchg   %ax,%ax
  118:	66 90                	xchg   %ax,%ax

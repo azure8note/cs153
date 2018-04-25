@@ -20,12 +20,36 @@ sys_exit(void)
   return 0;  // not reached
 }
 
+//new exit
+int
+sys_nexit(void)//maybe should not be void?
+{
+  int status;//holds the exit status
+ 
+  if(argint(0, &status) < 0); //gets argument from nexit
+    return -1; // failed to get argument
+  nexit(status); //returns exit status
+  return 0; 
+ }
+//end new exit
+ 
 int
 sys_wait(void)
 {
   return wait();
 }
 
+//New wait function
+int
+sys_nwait(void)
+{
+  int *status;
+ 
+  if(argptr(0,(char**) &status, 1));
+    return -1;
+  return nwait(status);
+}
+ 
 int
 sys_kill(void)
 {

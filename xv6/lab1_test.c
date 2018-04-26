@@ -6,8 +6,7 @@ int waitPid(void);
 
 int main(int argc, char *argv[]) {
 
-
-/*    printf(1, "####################################################\n");
+    printf(1, "####################################################\n");
     printf(1, "# This program tests the correctness of your lab#1\n");
     printf(1, "####################################################\n");
   
@@ -16,32 +15,12 @@ int main(int argc, char *argv[]) {
 //    else if (atoi(argv[1]) == 2)
 //        waitPid(); // Test waitpid
     // For corner cases
-    else 
-        printf(1, "\ntype \"lab1 1\" to test exit and wait, \"lab1 2\" to test waitpid \n");
-  
-    // End of test */
-    printf(1, "Simple code\n");
-
-    int pid, ret_pid, exit_status;
-
-    pid = fork();
-
-    if(pid == 0) {
-        printf(1, " - This is child with PID# %d and I will exit with status %d\n", getpid(), 0);
-        nexit(0);
-    }
-    else if(pid > 0){
-        ret_pid = nwait(&exit_status);
-        printf(1, " - This is the parent: child with PID# %d has exited with status %d\n", ret_pid, exit_status);
-    }
-    else {
-	printf(2, " - Error using fork\n");
-	nexit(-1);
-    }
-    return 0;
+    else printf(1, "\ntype \"lab1 1\" to test exit and wait, \"lab1 2\" to test waitpid \n");
+	return 0;
+    // End of test
 }
   
- /*
+
 int exitWait(void) {
     int pid, ret_pid, exit_status;
     int i;
@@ -69,7 +48,7 @@ int exitWait(void) {
     }
     return 0;
 }
-*/
+
 
 
 /*

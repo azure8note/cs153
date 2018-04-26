@@ -26,7 +26,7 @@ sys_nexit(void)//maybe should not be void?
 {
   int status;//holds the exit status
  
-  if(argint(0, &status) < 0); //gets argument from nexit
+  if(argint(0, &status) < 0) //gets argument from nexit
     return -1; // failed to get argument
   nexit(status); //returns exit status
   return 0; 
@@ -45,7 +45,7 @@ sys_nwait(void)
 {
   int *status;
  
-  if(argptr(0,(char**) &status, 1));
+  if(argptr(0,(char**) &status, 1))
     return -1;
   return nwait(status);
 }

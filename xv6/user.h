@@ -7,7 +7,7 @@ int exit(void) __attribute__((noreturn));
 int wait(void);
 
 //new exit
-int nexit(int status) __attribute__((noreturn));
+int nexit(int) __attribute__((noreturn));
 //end new exit
 
 //new wait

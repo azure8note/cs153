@@ -267,7 +267,7 @@ exit(void)
   panic("zombie exit");
 }
 
-//NEW EXIT
+//cs 153 NEW EXIT
 
 // Exit the current process.  Does not return.
 // An exited process remains in the zombie state
@@ -364,7 +364,7 @@ wait(void)
   }
 }
 
-//NEW WAIT
+//cs 153 NEW WAIT
 
 // Wait for a child process to exit and return its pid.
 // Return -1 if this process has no children.

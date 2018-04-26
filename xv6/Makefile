@@ -158,6 +158,7 @@ mkfs: mkfs.c fs.h
 # http://www.gnu.org/software/make/manual/html_node/Chained-Rules.html
 .PRECIOUS: %.o
 
+#cs 153 add _lab1_test\
 UPROGS=\
 	_cat\
 	_echo\
@@ -165,7 +166,7 @@ UPROGS=\
 	_grep\
 	_init\
 	_kill\
-  _lab1_test\
+	_lab1_test\
 	_ln\
 	_ls\
 	_mkdir\
@@ -241,6 +242,7 @@ qemu-nox-gdb: fs.img xv6.img .gdbinit
 # rename it to rev0 or rev1 or so on and then
 # check in that version.
 
+#cs 153 add lab1_test.c
 EXTRA=\
 	mkfs.c ulib.c user.h cat.c echo.c forktest.c grep.c kill.c\
 	lab1_test.c ln.c ls.c mkdir.c rm.c stressfs.c wc.c zombie.c\

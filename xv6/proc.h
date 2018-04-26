@@ -49,7 +49,7 @@ struct proc {
   struct file *ofile[NOFILE];  // Open files
   struct inode *cwd;           // Current directory
   char name[16];               // Process name (debugging)
-//new exit Data
+//cs 153 new exit Data
   int nexitstatus;
 //End new exit Data
 

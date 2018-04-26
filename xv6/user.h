@@ -6,11 +6,11 @@ int fork(void);
 int exit(void) __attribute__((noreturn));
 int wait(void);
 
-//new exit
+//cs 153 new exit
 int nexit(int) __attribute__((noreturn));
 //end new exit
 
-//new wait
+//cs 153 new wait
 int nwait(int*);
 
 int pipe(int*);

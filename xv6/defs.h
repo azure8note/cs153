@@ -106,7 +106,7 @@ int             pipewrite(struct pipe*, char*, int);
 int             cpuid(void);
 void            exit(void);
 
-// new exit
+//cs 153 new exit
 void 		        nexit(int status);
 //end new exit
 
@@ -124,7 +124,7 @@ void            sleep(void*, struct spinlock*);
 void            userinit(void);
 int             wait(void);
 
-//new wait
+//cs 153 new wait
 int 	  	      nwait(int *status);
 //end new wait
 

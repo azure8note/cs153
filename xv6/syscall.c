@@ -87,7 +87,7 @@ extern int sys_close(void);
 extern int sys_dup(void);
 extern int sys_exec(void);
 extern int sys_exit(void);
-//New exit
+//cs 153 New exit
 extern int sys_nexit(void);
 
 extern int sys_fork(void);
@@ -104,7 +104,7 @@ extern int sys_sbrk(void);
 extern int sys_sleep(void);
 extern int sys_unlink(void);
 extern int sys_wait(void);
-//New wait
+//cs 153 New wait
 extern int sys_nwait(void);
 
 extern int sys_write(void);
@@ -135,6 +135,7 @@ static int (*syscalls[])(void) = {
 [SYS_nexit]   sys_nexit,
 [SYS_nwait]   sys_nwait,
 };
+//cs 153 add sys_nexit sys_nwait
 
 void
 syscall(void)

@@ -20,7 +20,7 @@ sys_exit(void)
   return 0;  // not reached
 }
 
-//new exit
+//cs 153 new exit
 int
 sys_nexit(void)//maybe should not be void?
 {
@@ -39,7 +39,7 @@ sys_wait(void)
   return wait();
 }
 
-//New wait function
+//cs 153 new wait
 int
 sys_nwait(void)
 {
@@ -49,6 +49,7 @@ sys_nwait(void)
     return -1;
   return nwait(status);
 }
+//end new wait
  
 int
 sys_kill(void)

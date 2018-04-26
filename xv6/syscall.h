@@ -22,3 +22,4 @@
 #define SYS_close  21
 #define SYS_nexit  22
 #define SYS_nwait  23
+//cs 153 add SYS_nexit SYS_nwait
